@@ -1,0 +1,174 @@
+{
+  "resourceType": "Bundle",
+  "identifier": {
+    "system": "urn:ietf:rfc:4122",
+    "value": "urn:uuid:6c8f2245-765b-4abc-9d80-4cfca3db6e80"
+  },
+  "type": "document",
+  "timestamp": "2023-07-27T11:33:02.002+08:00",
+  "entry": [
+    {
+      "fullUrl": "Composition/0d11d101-8fd5-411f-bfb5-fe26326449f1",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "0d11d101-8fd5-411f-bfb5-fe26326449f1",
+        "extension": [
+          {
+            "url": "https://ehealth.gov.hk/FHIR/99999999-SendingLocation",
+            "valueString": "CWB_17"
+          },
+          {
+            "url": "https://ehealth.gov.hk/FHIR/99999999-ComplianceLevel",
+            "valueString": "3"
+          },
+          {
+            "url": "https://ehealth.gov.hk/FHIR/99999999-DomainVersion",
+            "valueString": "eHRSS-2.0.3"
+          },
+          {
+            "url": "https://ehealth.gov.hk/FHIR/99999999-UploadMode",
+            "valueString": "NBL"
+          }
+        ],
+        "status": "final",
+        "type": {
+          "coding": [
+            {
+              "system": "https://ehealth.gov.hk/FHIR",
+              "display": "Hong Kong eHR Healthcare Document"
+            }
+          ],
+          "text": "Hong Kong eHR Healthcare Document"
+        },
+        "subject": {
+          "reference": "Patient/35ac8e67-1e6e-4a51-8fa7-a5452e00cfcc"
+        },
+        "date": "2023-07-27T11:33:02.002+08:00",
+        "author": [
+          {
+            "reference": "Organization/20ea8e73-ce6a-409e-a10e-5f0f18e75995"
+          }
+        ],
+        "section": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "https://ehealth.gov.hk/FHIR/datadomain",
+                  "code": "LABAP",
+                  "display": "Laboratory Result (Anatomical Pathology Result) Records"
+                }
+              ],
+              "text": "Laboratory Result (Anatomical Pathology Result) Records"
+            },
+            "entry": [
+              {
+                "extension": [
+                  {
+                    "url": "https://ehealth.gov.hk/FHIR/99999999-TransactionDateTime",
+                    "valueDateTime": "2023-07-27T11:33:02+08:00"
+                  },
+                  {
+                    "url": "https://ehealth.gov.hk/FHIR/99999999-TransactionType",
+                    "valueString": "D"
+                  },
+                  {
+                    "url": "https://ehealth.gov.hk/FHIR/99999999-LastUpdateDateTime",
+                    "valueDateTime": "2023-07-27T11:33:02+08:00"
+                  }
+                ],
+                "reference": "DiagnosticReport/5ba230ba-d8cc-4640-8cba-09f8268ebb0a",
+                "identifier": {
+                  "system": "https://ehealth.gov.hk/HCP/Recordkey",
+                  "value": "LAAM_20241017_1752246332"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Patient/35ac8e67-1e6e-4a51-8fa7-a5452e00cfcc",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "35ac8e67-1e6e-4a51-8fa7-a5452e00cfcc",
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "https://ehealth.gov.hk/FHIR/typeofID-ext",
+                  "code": "EHRNO"
+                }
+              ]
+            },
+            "value": "944272043043"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "https://ehealth.gov.hk/FHIR/typeofID-ext",
+                  "code": "ID"
+                }
+              ]
+            },
+            "value": "YD1298051"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "text": "TEST, LAAM PARTICIPANT A",
+            "family": "TEST",
+            "given": [
+              "LAAM PARTICIPANT A"
+            ]
+          }
+        ],
+        "gender": "unknown",
+        "birthDate": "2000-08-04"
+      }
+    },
+    {
+      "fullUrl": "DiagnosticReport/5ba230ba-d8cc-4640-8cba-09f8268ebb0a",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "5ba230ba-d8cc-4640-8cba-09f8268ebb0a",
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/d2049f3e-07b8-4263-ac69-00f1b7bec2d1"
+          }
+        ],
+        "status": "final"
+      }
+    },
+    {
+      "fullUrl": "ServiceRequest/d2049f3e-07b8-4263-ac69-00f1b7bec2d1",
+      "resource": {
+        "resourceType": "ServiceRequest",
+        "id": "d2049f3e-07b8-4263-ac69-00f1b7bec2d1",
+        "identifier": [
+          {
+            "system": "https://ehealth.gov.hk/HCP/OrderNum",
+            "value": "8088450656:OR1101606192"
+          }
+        ],
+        "status": "completed",
+        "intent": "order",
+        "subject": {
+          "reference": "Patient/9846a4e1-f689-4beb-8de1-a75f0b5741d2"
+        }
+      }
+    },
+    {
+      "fullUrl": "Organization/20ea8e73-ce6a-409e-a10e-5f0f18e75995",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "20ea8e73-ce6a-409e-a10e-5f0f18e75995"
+      }
+    }
+  ]
+}
